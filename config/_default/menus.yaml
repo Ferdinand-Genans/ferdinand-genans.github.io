@@ -8,8 +8,8 @@ main:
     url: /
     weight: 10
   - name: Research
-    url: /#research
+    url: #research
     weight: 11
   - name: Teaching
     url: teaching/
-    weight: 40
+    weight: 12
