@@ -48,11 +48,11 @@ education:
     date_start: 2023
     date_end: 2026 (expected)
     summary: |
-      Thesis focused on Stochastic Optimization and Optimal Transport. Supervised by [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr). 
+      Thesis focused on Stochastic Optimization and Optimal Transport. Supervised by [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
   - area: MSc Mathematics, Statistics
     institution: Sorbonne University
     date_end: 2023
-   
+
 languages:
   - name: French (Native)
   - name: English (Advanced)
