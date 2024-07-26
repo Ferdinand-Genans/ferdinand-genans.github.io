@@ -55,11 +55,10 @@ education:
 
 languages:
   - name: French (Native)
-
   - name: English (Advanced)
-    
   - name: Russian (Advanced)
-    
+
 ## About Me
+
 I am a PhD student at Sorbonne University, Paris. My research is focused on stochastic optimization and optimal transport. My supervisors are [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
 ---
