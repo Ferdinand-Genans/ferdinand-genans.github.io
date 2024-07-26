@@ -45,14 +45,14 @@ interests:
 education:
   - area: PhD Mathematics
     institution: Sorbonne University
-    date_start: 2023
-    date_end: 2026 (expected)
+    date_start: "2023"  # Quoting the year to prevent parsing as a date
+    date_end: "2026 (expected)"  # Quoting the year to prevent parsing as a date
     summary: |
       Thesis focused on Stochastic Optimization and Optimal Transport. Supervised by [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
   - area: MSc Mathematics, Statistics
     institution: Sorbonne University
-    date_end: 2023
-
+    date_end: "2023"  # Quoting the year to prevent parsing as a date
+   
 languages:
   - name: French (Native)
   - name: English (Advanced)
