@@ -41,6 +41,7 @@ sections:
   - block: collection
     content:
       title: Recent Publications/Preprints
+      id: papers
       text: ""
       filters:
         folders:
