@@ -43,14 +43,12 @@ interests:
   - Statistical Learning
 
 education:
-  - area: PhD Mathematics
+  - area: PhD Mathematics, 2026 (expected)
     institution: Sorbonne University
-    end_note: 2026 (expected)  # Quoting the year to prevent parsing as a date
     summary: |
       Thesis focused on Stochastic Optimization and Optimal Transport. Supervised by [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
-  - area: MSc Mathematics, Statistics
+  - area: MSc Mathematics, Statistics, 2023
     institution: Sorbonne University
-    end_note: 2023
    
 languages:
   - name: French (Native)
