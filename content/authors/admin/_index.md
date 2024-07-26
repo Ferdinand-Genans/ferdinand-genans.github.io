@@ -7,9 +7,6 @@ title: Ferdinand Genans
 first_name: Ferdinand
 last_name: Genans
 
-# # Status emoji
-# status:
-#   icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
