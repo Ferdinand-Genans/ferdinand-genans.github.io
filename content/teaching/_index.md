@@ -1,23 +1,16 @@
 ---
 title: Teaching
 summary: My courses
-type: landing
-
-cascade:
-  - _target:
-      kind: page
-    params:
-      show_breadcrumb: true
-
-sections:
-  - block: collection
-    id: teaching
-    content:
-      title: Teaching
-      filters:
-        folders:
-          - teaching
-    design:
-      view: article-grid
-      columns: 2
 ---
+
+# Teaching
+
+## 2024-2025
+
+- **Séries temporelles, Master 1**
+- **Séries numériques et séries de fonctions**
+
+## Previously
+
+- **Séries temporelles, Master 1**
+- **Modélisation statistique, Master 1**
