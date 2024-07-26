@@ -4,9 +4,9 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: Ferdinand Genans
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://ferdinand-genans.github.io/'
 
 ############################
 ## LANGUAGE
@@ -53,3 +53,4 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
