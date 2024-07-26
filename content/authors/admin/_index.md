@@ -34,8 +34,6 @@ profiles:
     url: https://github.com/
   - icon: brands/linkedin
     url: https://fr.linkedin.com/in/ferdinand-genans-048146244
-  - icon: brands/skype
-    url: https://join.skype.com/invite/eYFcsv7e4YJg
 
 interests:
   - Optimization (Convex, Stochastic, Online)
