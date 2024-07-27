@@ -62,9 +62,7 @@ I am a PhD student at Sorbonne University, Paris. My research is focused on stoc
 
 **Languages**: French (Native), English (Advanced), Russian (Advanced)
 
-<div style="display: flex; align-items: center; margin-top: 1em;">
-  <i class="fas fa-building" style="margin-right: 8px;"></i>
-  <span>Tower 15-25, 2nd floor, Office 201</span>
-</div>
+**Office**: 201, Tower 15-25, 2nd floor, Sorbonne University, Marie Curie Campus
+
 
 
