@@ -63,12 +63,8 @@ I am a PhD student at Sorbonne University, Paris. My research is focused on stoc
 **Languages**: French (Native), English (Advanced), Russian (Advanced)
 
 <div style="display: flex; align-items: center; margin-top: 1em;">
-  <img src="/images/office-icon.png" alt="Office Icon" style="width: 24px; height: 24px; margin-right: 8px;">
+  <i class="fas fa-building" style="margin-right: 8px;"></i>
   <span>Tower 15-25, 2nd floor, Office 201</span>
 </div>
-
-## About Me
-
-I am a PhD student at Sorbonne University, Paris. My research is focused on stochastic optimization and optimal transport. My supervisors are [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
 
 
