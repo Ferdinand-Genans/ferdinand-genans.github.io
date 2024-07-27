@@ -20,7 +20,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: Colored-Shapes.svg
+          filename: Moon.svg
           filters:
             brightness: 1.0
           size: cover
