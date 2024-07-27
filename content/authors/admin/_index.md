@@ -47,13 +47,24 @@ education:
       Thesis focused on Stochastic Optimization and Optimal Transport. Supervised by [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
   - area: MSc Mathematics, Statistics, 2023
     institution: Sorbonne University
-   
+
 languages:
-  - name: French (Native)
-  - name: English (Advanced)
-  - name: Russian (Advanced)
+  - name: French
+    level: Native
+  - name: English
+    level: Advanced
+  - name: Russian
+    level: Advanced
+
+# Office location
+office:
+  building: Tower 15-25
+  floor: 2nd floor
+  room: Office 201
 ---
 
 ## About Me
 
 I am a PhD student at Sorbonne University, Paris. My research is focused on stochastic optimization and optimal transport. My supervisors are [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
+
+
