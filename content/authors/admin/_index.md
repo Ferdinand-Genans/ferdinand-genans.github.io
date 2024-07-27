@@ -21,7 +21,6 @@ organizations:
     url: https://www.sorbonne-universite.fr/
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
     url: 'mailto:ferdinand.genans-boiteux@sorbonne-universite.fr'
@@ -55,13 +54,18 @@ languages:
     level: Advanced
   - name: Russian
     level: Advanced
-
-# Office location
-office:
-  building: Tower 15-25
-  floor: 2nd floor
-  room: Office 201
 ---
+
+## About Me
+
+I am a PhD student at Sorbonne University, Paris. My research is focused on stochastic optimization and optimal transport. My supervisors are [A. Godichon-Baggioni](https://godichon.perso.math.cnrs.fr/), [F-X. Vialard](https://angkor.univ-mlv.fr/~vialard/) and [O. Wintenberger](https://wintenberger.fr).
+
+**Languages**: French (Native), English (Advanced), Russian (Advanced)
+
+<div style="display: flex; align-items: center; margin-top: 1em;">
+  <img src="/images/office-icon.png" alt="Office Icon" style="width: 24px; height: 24px; margin-right: 8px;">
+  <span>Tower 15-25, 2nd floor, Office 201</span>
+</div>
 
 ## About Me
 
