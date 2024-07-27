@@ -6,9 +6,9 @@ summary: My courses
 ## 2024-2025
 
 - **Séries temporelles, Master 1**
-  (Informations à suivre) 
+  (Sera mis à jour pendant le semestre) 
 - **Séries numériques et séries de fonctions**
-  (Informations à suivre) 
+  (Sera mis à jour pendant le semestre) 
 
 ## Previously
 
