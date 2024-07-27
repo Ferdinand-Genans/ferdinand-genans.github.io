@@ -33,7 +33,7 @@ sections:
         <a name="research"></a>
         ## 📚 My Research
 
-        My research focuses on optimal transport problems and its link with subfields of optimization such as stochastic, online and convex optimization. The goal is then to design efficient algorithms, with the best computationnal but also statistical complexity. 
+       My research focuses on optimal transport problems and their link with subfields of optimization, such as stochastic, online, and convex optimization. The goal is to design efficient algorithms with the best computational and statistical complexity.
     design:
       columns: '1'
   - block: collection
