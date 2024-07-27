@@ -30,12 +30,12 @@ featured: true
 
 links:
 - name: Arxiv preprint
-  url: http://example.org
-url_dataset: '#'
-url_poster: '#'
+  url: https://arxiv.org/pdf/2405.14459
+url_dataset: ''
+url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: '#'
-url_video: '#'
+url_source: ''
+url_video: ''
 
 ---
