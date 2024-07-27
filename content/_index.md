@@ -32,7 +32,7 @@ sections:
       text: |-
         <a name="research"></a>
         <div style="text-align: center;">
-        ## 📚 My Research
+          <h2>📚 My Research</h2>
         </div>
 
         My research focuses on optimal transport problems and their link with subfields of optimization, such as stochastic, online, and convex optimization. The goal is to design efficient algorithms with the best computational and statistical complexity.
