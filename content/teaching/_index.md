@@ -3,8 +3,6 @@ title: Teaching
 summary: My courses
 ---
 
-# Teaching
-
 ## 2024-2025
 
 - **Séries temporelles, Master 1**
