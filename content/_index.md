@@ -27,9 +27,9 @@ sections:
           position: center
           parallax: false
   - block: markdown
-    <a id="research"></a>
     content:
       title: '📚 My Research'
+      id: research_block
       subtitle: ''
       text: |-
         Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
