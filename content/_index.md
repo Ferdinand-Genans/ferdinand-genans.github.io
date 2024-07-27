@@ -33,11 +33,7 @@ sections:
         <a name="research"></a>
         ## 📚 My Research
 
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        My research focuses on optimal transport problems and its link with subfields of optimization such as stochastic, online and convex optimization. The goal is then to design efficient algorithms, with the best computationnal but also statistical complexity. 
     design:
       columns: '1'
   - block: collection
