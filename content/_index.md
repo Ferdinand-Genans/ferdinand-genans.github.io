@@ -26,28 +26,5 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
-    content:
-      id: research
-      text: |-
-        <a name="research"></a>
-        <div style="text-align: center;">
-          <h2>📚 My Research</h2>
-        </div>
-
-        My research focuses on optimal transport problems and their link with subfields of optimization, such as stochastic, online, and convex optimization. The goal is to design efficient algorithms with the best computational and statistical complexity.
-    design:
-      columns: '1'
-  - block: collection
-    content:
-      title: Recent Publications/Preprints
-      id: papers
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: citation
 ---
 
