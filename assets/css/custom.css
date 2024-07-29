@@ -1,0 +1,10 @@
+/* assets/css/custom.css */
+
+.main-content {
+    padding-top: 20px; /* Adjust the padding to your preference */
+}
+
+/* Reduce margin of the section containing the bio */
+#bio-section {
+    margin-top: 20px; /* Adjust the margin to your preference */
+}
