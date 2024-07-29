@@ -12,20 +12,22 @@ appearance:
 # SEO
 marketing:
   seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    site_type: "PersonalWebsite" # Change this to reflect your site type
+    local_business_type: "" # Leave empty if not applicable
+    org_name: "Ferdinand Genans" # Your name or organization name
+    description: "Ferdinand Genans' personal academic website showcasing research and publications." # Update the description
+    twitter: "" # Your Twitter handle
+
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
+    google_analytics: "" # Add your Google Analytics ID
+    baidu_tongji: "" # Leave empty if not applicable
+    plausible: "" # Leave empty if not applicable
+    fathom: "" # Leave empty if not applicable
+    pirsch: "" # Leave empty if not applicable
+
   verification:
-    google: ''
-    baidu: ''
+    google: "" # Add your Google site verification code
+    baidu: "" # Leave empty if not applicable
 
 # Site header
 header:
