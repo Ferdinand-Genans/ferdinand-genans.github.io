@@ -10,8 +10,8 @@ summary: My courses
   (Sera mis à jour pendant le semestre) 
 - **Séries numériques et séries de fonctions, L2**
   
-  Correction détaillée (r), ex 2, TD1 : [lien](/Correction_TD1_ex2_r.pdf) 
-
+  Correction détaillée (r), ex 2, TD1 : [lien](Correction_TD1_ex2_r.pdf)
+  
 ## Previously
 
 - **Séries temporelles, Master 1**
