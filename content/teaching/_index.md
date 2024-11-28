@@ -7,7 +7,10 @@ summary: My courses
 
 - **Séries temporelles, Master 1**
   
-  (Sera mis à jour pendant le semestre)
+ TD 1: [lien](TD1;pdf)
+ TD 2: [lien](TD2;pdf)
+ TD 3: [lien](TD3;pdf)
+ TD 4: [lien](TD4;pdf)
   
 - **Séries numériques et séries de fonctions, L2**
   
