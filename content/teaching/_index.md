@@ -25,7 +25,7 @@ summary: My courses
 
   CC3: [sujet](CC3_L2.pdf), [correction](CC3_L2_Corr.pdf)
 
-  Petit tuto sur la convergence des séries de fonction: [lien](Methode_CV_Serie_Fct.pdf)
+  Petit tuto sur la convergence des séries de fonctions: [lien](Methode_CV_Serie_Fct.pdf)
   
 ## Previously
 
