@@ -20,6 +20,10 @@ summary: My courses
   Correction détaillée TD1, ex 2, (r) : [lien](Correction_TD1_ex2_r.pdf)
   
   CC1: [sujet](CC1_L2_sujet.pdf), [correction](CC1_L2_corr.pdf)
+
+  CC2: [sujet](CC2_L2.pdf), [correction](CC2_L2_Corr.pdf)
+
+  CC3: [sujet](CC3_L2.pdf), [correction](CC3_L2_Corr.pdf) 
   
 ## Previously
 
