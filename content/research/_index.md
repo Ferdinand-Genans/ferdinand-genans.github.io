@@ -8,7 +8,13 @@ My research focuses on optimal transport problems and their link with subfields 
 
 ## Recent Publications/Preprints
 
-#### - Semi-Discrete Optimal Transport: Nearly Minimax Estimation With Stochastic Gradient Descent and Adaptive Entropic Regularization
+#### - Decreasing Entropic Regularization Averaged Gradient for Semi-Discrete Optimal Transport
 - **Authors:** F. Genans, A. Godichon-Baggioni, F-X Vialard, O; Wintenberger
-- **Short abstract:** In the semi-discrete Optimal Transport (OT) setting, where the source measure is continuous and the target is discrete, we prove that estimating the OT cost and OT map with the usual quadratic cost is a non-regular parametric problem. This means it benefits from enhanced convergence rates. Moreover, we design a gradient-based algorithm with decreasing entropy regularization to nearly match the lower bounds we proved. 
-- **Link:** [ArXiv](https://arxiv.org/pdf/2405.14459)
+- **Short abstract:** We introduce DRAG, a stochastic algorithm for semi-discrete Optimal Transport that decreases entropic regularization during training. This yields unbiased estimates and faster convergence than fixed-regularization methods, with both theory and experiments confirming its efficiency.
+- **Link:** Soon available, paper under review.
+  
+
+#### - Stochastic Optimization in Semi-Discrete Optimal Transport: Convergence Analysis and Minimax Rate
+- **Authors:** F. Genans, A. Godichon-Baggioni, F-X Vialard, O; Wintenberger
+- **Short abstract:** We prove that Stochastic Gradient Descent can efficiently approximate the OT map in the semi-discrete setting, even in an online fashion, establishing the first minimax convergence guarantees for a broad class of cost functions and non-compact measures.
+- **Link:** Soon available, paper under review.
