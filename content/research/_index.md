@@ -17,5 +17,5 @@ My research focuses on optimal transport problems and their link with subfields 
 #### - [NeurIPS 2025] Decreasing Entropic Regularization Averaged Gradient for Semi-Discrete Optimal Transport
 - **Authors:** F. Genans, A. Godichon-Baggioni, F-X Vialard, O; Wintenberger
 - **Short abstract:** We introduce DRAG, a stochastic algorithm for semi-discrete Optimal Transport that decreases entropic regularization during training. This yields unbiased estimates and faster convergence than fixed-regularization methods, with both theory and experiments confirming its efficiency.
-- **Link:** 
+- **Link:** [PDF](./DRAG_NeurIPS25.pdf)
   
