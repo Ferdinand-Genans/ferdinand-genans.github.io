@@ -4,7 +4,7 @@ date: 2024-07-29
 type: "page"  # If using Hugo Academic's page type system
 ---
 
-My research focuses on optimal transport problems and their link with subfields of optimization, such as stochastic, online, and convex optimization. The goal is to design efficient algorithms with the best computational and statistical complexity.
+My research primarly focuses on optimal transport problems and their link with subfields of optimization, such as stochastic, online, and convex optimization. The goal is to design efficient algorithms with the best computational and statistical complexity.
 
 ## Preprints
 
