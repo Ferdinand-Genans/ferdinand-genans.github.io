@@ -8,6 +8,12 @@ My research primarly focuses on optimal transport problems and their link with s
 
 ## Preprints
 
+#### - Fast and Large-Scale Unbalanced Optimal Transport via its Semi-Dual and Adaptive Gradient Methods
+- **Authors:** F. Genans
+- **Short abstract:** In Unbalanced Optimal Transport (UOT), we investigate the entropically regularized semi-dual objective. We prove the convergence rates of SGD and ASGD in both stochastic and semi-discrete settings. For the discrete case, we introduce a smoothness-adaptive Nesterov accelerated gradient descent scheme. We establish its global convergence rate and demonstrate an enhanced local convergence of $\mathcal{O}(\log(1/\delta)/\sqrt{\varepsilon})$ to achieve $\delta$-accuracy.
+- **Link:** [PDF](./Preprint_AdaptiveGD_UOT.pdf)
+
+  
 #### - Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation
 - **Authors:** F. Genans, O. Wintenberger
 - **Short abstract:** We introduce a fast estimator for the one-sample Wasserstein discretization error that avoids the need for an OT solver. Building on this, we propose a resolution-dependent intrinsic dimension estimator for probability measures. Finally, we derive a new OT Richardson extrapolation estimator for the OT distance utilizing this intrinsic dimension.
