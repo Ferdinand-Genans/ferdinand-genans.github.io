@@ -1,51 +1,65 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# ferdinand-genans.github.io
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+Source of my personal academic website: <https://ferdinand-genans.github.io/>.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## Stack
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+- [Hugo](https://gohugo.io/) (extended) + the
+  [Hugo Blox / Academic CV](https://github.com/HugoBlox/theme-academic-cv) theme,
+  pulled as a Hugo module via `go.mod`.
+- Deployed automatically on every push to `main` by
+  [.github/workflows/publish.yaml](.github/workflows/publish.yaml)
+  (builds with Hugo + `actions/deploy-pages`).
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+> **GitHub Pages source must be set to "GitHub Actions"** (Settings → Pages → Source).
+> If it is set to "Deploy from a branch" instead, GitHub will serve this README
+> through Jekyll instead of the built Hugo site.
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+## Content layout
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+| Path | What it holds |
+|------|---------------|
+| [content/_index.md](content/_index.md) | Home page (biography hero + News, rendered by an override of the `resume-biography-3` blox) |
+| [content/authors/admin/_index.md](content/authors/admin/_index.md) | My profile (drives the home hero and the Resume page) |
+| [content/resume/_index.md](content/resume/_index.md) | Resume page (download CV + rendered experience / skills / awards / languages + embedded PDF preview) |
+| [content/research/_index.md](content/research/_index.md) | Research page (publications + preprints as cards) |
+| [content/research/papers-illustrations/](content/research/papers-illustrations/) | Small thumbnail per publication |
+| [content/blog/](content/blog/) | Blog section (currently **hidden** — `build: render: never` until I have posts ready) |
+| [data/news.yaml](data/news.yaml) | News items shown on the home page (newest first) |
+| [data/publications.yaml](data/publications.yaml) | Publications + preprints rendered on the research page |
+| [layouts/shortcodes/](layouts/shortcodes/) | `publication_list` and `latest_news` shortcodes |
+| [layouts/partials/blox/](layouts/partials/blox/) | Project overrides of `resume-biography-3` and `resume-languages` |
+| [assets/css/custom.css](assets/css/custom.css) | Wider content area on Resume/Research, publication thumbnail sizing, news-in-hero styling |
+| [static/uploads/CV_FGenans_DS.pdf](static/uploads/CV_FGenans_DS.pdf) | CV file served at `/uploads/CV_FGenans_DS.pdf` |
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+## Local development
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+```bash
+# Run dev server
+hugo server --port 1313 --disableFastRender
 
-## We ask you, humbly, to support this open source movement
+# Production build (what the GitHub workflow does)
+hugo --gc --minify
+```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+## Common edits
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+- **Add a news item** → append to [data/news.yaml](data/news.yaml).
+- **Add a publication** → append an entry under `publications:` or `preprints:` in
+  [data/publications.yaml](data/publications.yaml), and drop a thumbnail into
+  [content/research/papers-illustrations/](content/research/papers-illustrations/).
+- **Update CV info** → edit [content/authors/admin/_index.md](content/authors/admin/_index.md)
+  (the Resume page reads from it) **and** replace
+  [static/uploads/CV_FGenans_DS.pdf](static/uploads/CV_FGenans_DS.pdf) with a fresh PDF.
+- **Unhide the Blog** → remove the `build` / `cascade` blocks from
+  [content/blog/_index.md](content/blog/_index.md) (and from the sample post),
+  then uncomment the Blog entry in [config/_default/menus.yaml](config/_default/menus.yaml).
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+## Adding a notebook-style blog post
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
-
-## Demo image credits
-
-- [Unsplash](https://unsplash.com)
-
-## Latest news
-
-<!--START_SECTION:news-->
-* [6 Compelling Reasons I Switched from WordPress to Hugo](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;wordpress&#x2F;)
-* [The 7 best landing page builders in 2024](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;7-best-landing-page-builders&#x2F;)
-* [Start a Blog and Make Money in 2024: Here&#39;s What You Need to Know](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;start-a-blog-and-make-money&#x2F;)
-* [Hugo vs Quarto: Which One is Better for 2024?](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;quarto&#x2F;)
-* [Easily make an academic CV website to get more cites and grow your audience 🚀](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;easily-make-academic-website&#x2F;)
-<!--END_SECTION:news-->
+1. Write the post in Jupyter under `content/blog/<slug>/notebook.ipynb`.
+2. Convert to Markdown next to it: `jupyter nbconvert --to markdown notebook.ipynb --output index`.
+3. Add YAML front matter to `index.md` (`title`, `date`, `summary`, `authors: [admin]`, optional `tags`).
+4. Drop referenced figures (e.g. `plot.svg`, `output_5_0.png`) into the same folder —
+   Hugo picks them up as page resources.
+5. The raw `.ipynb` is ignored by Hugo (`ignoreFiles` in `config/_default/hugo.yaml`).

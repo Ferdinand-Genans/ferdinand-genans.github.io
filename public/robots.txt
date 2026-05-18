@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: http://localhost:57149/sitemap.xml
+Sitemap: https://ferdinand-genans.github.io/sitemap.xml
