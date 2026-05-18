@@ -100,8 +100,8 @@ work:
       and **C++** for CPU. Release expected in May 2026.
 
 awards:
-  - title: 'Golden Reviewer'
-    date: '2023-06-30'
+  - title: 'ICML Gold Reviewer Award'
+    date: '2026-05-13'
     awarder: 'International Conference on Machine Learning (ICML)'
     summary: ''
 

@@ -19,7 +19,7 @@
 
   <div id="profile" class="flex justify-center items-center flex-col">
     {{ if $avatar }}
-    <div class="avatar-wrapper mt-10">
+    <div class="avatar-wrapper mt-2 md:mt-4">
       {{ $avatar_image := $avatar.Fill "150x150 Center" }}
       <img class="avatar rounded-full bg-white dark:bg-gray-800 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
            width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
@@ -60,7 +60,7 @@
   </div>
   </div>
 
-  <div class="flex-auto max-w-prose md:mt-12">
+  <div class="flex-auto max-w-prose md:mt-2">
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">
       <div class="bio-text">{{ . }}</div>

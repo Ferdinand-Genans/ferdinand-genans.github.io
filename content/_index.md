@@ -15,7 +15,7 @@ sections:
     design:
       css_class: dark
       spacing:
-        padding: ['3rem', '0', '3rem', '0']
+        padding: ['0.5rem', '0', '2rem', '0']
       background:
         color: black
         image:
