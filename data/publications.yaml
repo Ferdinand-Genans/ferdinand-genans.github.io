@@ -1,0 +1,83 @@
+# Publications and preprints rendered on the /research/ page.
+#
+# Categories (top-level keys): 'publications' and 'preprints'.
+# Each entry supports:
+#   title:    paper title (required)
+#   authors:  string of authors (required)
+#   abstract: short abstract (required)
+#   venue:    venue / publication outlet (e.g. "NeurIPS 2025 — Spotlight")
+#   year:     publication year/date
+#   paper:    link to the PDF or arXiv (optional)
+#   code:     link to the code repository (optional)
+#   image:    path to a figure. Optional.
+#
+# Missing fields are handled gracefully — only the buttons/sections with data appear.
+
+publications:
+  - title: "Fast and Large-Scale Unbalanced Optimal Transport via its Semi-Dual and Adaptive Gradient Methods"
+    authors: "F. Genans"
+    abstract: >
+      In Unbalanced Optimal Transport (UOT), we investigate the entropically regularized
+      semi-dual objective. We prove the convergence rates of SGD and ASGD in both
+      stochastic and semi-discrete settings. For the discrete case, we introduce a
+      smoothness-adaptive Nesterov accelerated gradient descent scheme. We establish its
+      global convergence rate and demonstrate an enhanced local convergence of
+      O(log(1/δ)/√ε) to achieve δ-accuracy.
+    venue: "COLT 2026"
+    year: 2026
+    paper: "https://arxiv.org/pdf/2602.10697"
+    code: ""
+    image: "/research/papers-illustrations/colt-uot-illustration.png"
+
+  - title: "Decreasing Entropic Regularization Averaged Gradient for Semi-Discrete Optimal Transport"
+    authors: "F. Genans, A. Godichon-Baggioni, F.-X. Vialard, O. Wintenberger"
+    abstract: >
+      We introduce DRAG, a stochastic algorithm for semi-discrete Optimal Transport
+      that decreases entropic regularization during training. This yields unbiased
+      estimates and faster convergence than fixed-regularization methods, with both
+      theory and experiments confirming its efficiency.
+    venue: "NeurIPS 2025"
+    year: 2025
+    paper: "https://arxiv.org/abs/2510.27340"
+    code: ""
+    image: "/research/papers-illustrations/neurips-drag-illustration.png"
+
+  - title: "Stochastic Optimization in Semi-Discrete Optimal Transport: Convergence Analysis and Minimax Rate"
+    authors: "F. Genans, A. Godichon-Baggioni, F.-X. Vialard, O. Wintenberger"
+    abstract: >
+      We prove that Stochastic Gradient Descent can efficiently approximate the OT map
+      in the semi-discrete setting, even in an online fashion, establishing the first
+      minimax convergence guarantees for a broad class of cost functions and
+      non-compact measures in this setting.
+    venue: "NeurIPS 2025 — Spotlight"
+    year: 2025
+    paper: "https://arxiv.org/pdf/2510.25287"
+    code: ""
+    image: "/research/papers-illustrations/neurips-sdot-illustration.png"
+
+preprints:
+  - title: "Increasing Missingness to Reduce Bias: Richardson-SGD with Missing Data"
+    authors: "F. Genans, E. Scornet"
+    abstract: >
+      A Richardson-extrapolation-based SGD scheme for learning with missing data, which
+      paradoxically increases missingness during training to reduce the bias of the
+      final estimator.
+    venue: "Preprint — under review at NeurIPS 2026"
+    year: 2026
+    paper: "/research/RichardsonMissingVals_Preprint.pdf"
+    code: ""
+    image: "/research/papers-illustrations/missingvals-illustration.png"
+    
+  - title: "Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation"
+    authors: "F. Genans, O. Wintenberger"
+    abstract: >
+      We introduce a fast estimator for the one-sample Wasserstein discretization error
+      that avoids the need for an OT solver. Building on this, we propose a
+      resolution-dependent intrinsic dimension estimator for probability measures.
+      Finally, we derive a new OT Richardson extrapolation estimator for the OT distance
+      utilizing this intrinsic dimension.
+    venue: "Preprint — under review at NeurIPS 2026"
+    year: 2026
+    paper: "https://arxiv.org/pdf/2602.04335"
+    code: ""
+    image: "/research/papers-illustrations/intrinsic-dim-illustration.png"

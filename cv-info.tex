@@ -1,0 +1,192 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\setlength\bibitemsep{1em}
+
+\usepackage{fontawesome5}
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+    \Huge{Ferdinand Genans} \\[7.5pt]
+    \href{https://ferdinand-genans.github.io/}{\raisebox{-0.05\height}\faGlobe \ ferdinand-genans.github.io} \ $|$ \
+    \href{mailto:genans.ferdinand@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ genans.ferdinand@gmail.com} \ $|$ \
+    \href{tel:+33647131425}{\raisebox{-0.05\height}\faMobile \ +33 6 47 13 14 25}
+    %\ $|$ \ 
+    % {\color{cyan}\raisebox{-0.05\height}{\faMapMarker}} \ Paris, France \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+PhD candidate in Statistics. Expertise in \textbf{statistical modeling}, \textbf{machine learning}, and \textbf{large-scale evaluation under uncertainty}. Former Student Researcher at \textbf{Google Research}, with experience developing analytics pipelines and applying statistical methods to improve large-scale systems.
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Industry Experience}
+
+\begin{joblong}{Student Researcher, Google Research}{Sep 2025 -- Mar 2026}
+    \item Researched stochastic and robust optimization methods for large-scale vehicle routing under demand uncertainty.
+    \item Built an end-to-end Python analytics pipeline for large-scale experiments, model evaluation, and performance reporting.
+    \item Developed evaluation metrics to measure route consistency, ETA stability, and customer-to-vehicle allocation quality.
+    \item Designed algorithms that improved consistency by 70\% across routing, estimated arrival times, and customer allocation.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Project}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Optimal Transport-based Statistics Python Library} & \hfill Jan 2025 -- present                                                                                                                                                                                                                                                                                                                                                                                                            \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Developing a high-performance OT-statistics module for the Python Optimal Transport library. The goal is to make statistical learning and model evaluation methods more accessible to machine learning researchers and data scientists, with a focus on \textbf{scalable implementation}, uncertainty quantification, and \textbf{high-performance} computation using \textbf{PyTorch} for GPU and \textbf{C++} for CPU. Work in progress, release expected in May 2026.} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=5pt,label=--]
+    \item \textbf{Stochastic Optimization in Semi-Discrete Optimal Transport: Convergence Analysis and Minimax Rate}. F. Genans, A. Godichon-Baggioni, F.-X. Vialard, O. Wintenberger. \textbf{NeurIPS 2025 Spotlight}. \href{https://arxiv.org/pdf/2510.25287}{arXiv}
+
+    \item \textbf{Decreasing Entropic Regularization Averaged Gradient for Semi-Discrete Optimal Transport}. F. Genans, A. Godichon-Baggioni, F.-X. Vialard, O. Wintenberger. \textbf{NeurIPS 2025}. \href{https://arxiv.org/abs/2510.27340}{arXiv}
+
+    \item \textbf{Fast and Large-Scale Unbalanced Optimal Transport via its Semi-Dual and Adaptive Gradient Methods}. F. Genans. \textbf{COLT 2026}. \href{https://arxiv.org/pdf/2602.10697}{arXiv}
+
+    \item \textbf{Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation}. F. Genans, O. Wintenberger. \textit{Preprint; under review at NeurIPS 2026}. \href{https://arxiv.org/pdf/2602.04335}{arXiv}
+
+    \item \textbf{Increasing Missingness to Reduce Bias: Richardson-SGD with Missing Data}. F. Genans, E. Scornet \textit{Preprint;  under review at NeurIPS 2026} \href{https://ferdinand-genans.github.io/research/RichardsonMissingVals_Preprint.pdf}{Link}.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    Sep 2023 -- Aug 26   & PhD in \textbf{Mathematics and Statistics}, Sorbonne University \hfill Paris, France       \\
+                         & Thesis title: Stochastic Algorithms for Optimal Transport                                  \\
+                         & Advisors: A. Godichon-Baggioni, F.-X. Vialard, O. Wintenberger                             \\[3pt]
+
+    Sep 2021 -- Jun 2023 & M.Sc. in \textbf{Applied Mathematics}, Sorbonne University \hfill Paris, France            \\
+                         & Ranked first in cohort                                                                     \\[3pt]
+
+    Sep 2021 -- Jun 2023 & M.Sc. in \textbf{Data Science}, Statistical Institute of Paris (ISUP) \hfill Paris, France \\
+                         & Ranked first in cohort                                                                     \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    Programming      & \normalsize{Python, PyTorch, scikit-learn, NumPy, Pandas, C++ (reading/modifying), Protocol Buffers}         \\
+    Machine Learning & \normalsize{Statistical Learning, Missing values, Multivariate statistics, Optimization , Optimal Transport} \\
+    Languages        & \normalsize{French (native), English (C1, TOEIC), Russian (B2)}                                              \\
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}

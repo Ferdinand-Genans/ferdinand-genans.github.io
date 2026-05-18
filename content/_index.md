@@ -5,21 +5,20 @@ date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
-  spacing: "6rem"
+  spacing: "0rem"
 
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
     design:
       css_class: dark
+      spacing:
+        padding: ['3rem', '0', '3rem', '0']
       background:
         color: black
         image:
-          # Add your image background to `assets/media/`.
           filename: simple.svg
           filters:
             brightness: 1.0
@@ -27,4 +26,3 @@ sections:
           position: center
           parallax: false
 ---
-

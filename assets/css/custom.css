@@ -1,10 +1,81 @@
 /* assets/css/custom.css */
 
 .main-content {
-    padding-top: 5px; /* Adjust the padding to your preference */
+  padding-top: 5px;
 }
 
 /* Reduce margin of the section containing the bio */
 #bio-section {
-    margin-top: 5px; /* Adjust the margin to your preference */
+  margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------
+   Widen content area on Resume, Research and Blog pages.
+   The theme constrains markdown content to `max-w-prose` (~65ch ≈ 720px),
+   which feels cramped for the publication cards, embedded PDF and
+   notebook posts. We bump it up — but not full-bleed.
+
+   We scope by Hugo Blox block-type classes (`.blox-markdown`,
+   `.blox-resume-*`). These blocks are only used on Resume / Research /
+   Blog pages, not on the home page (which uses `blox-resume-biography-3`).
+   --------------------------------------------------------------- */
+
+.blox-markdown .max-w-prose,
+.blox-markdown .prose,
+.blox-resume-experience .max-w-prose,
+.blox-resume-experience .prose,
+.blox-resume-skills .max-w-prose,
+.blox-resume-skills .prose,
+.blox-resume-awards .max-w-prose,
+.blox-resume-awards .prose,
+.blox-resume-languages .max-w-prose,
+.blox-resume-languages .prose {
+  max-width: 64rem !important;
+  /* ~1024px */
+  width: 100%;
+}
+
+/* Single blog/notebook post: widen the article body too */
+article .prose,
+article.prose,
+.prose.article-content,
+main article .max-w-prose,
+main article .prose {
+  max-width: 64rem !important;
+}
+
+/* Keep comfortable side gutters on mobile */
+.blox-markdown,
+.blox-resume-experience,
+.blox-resume-skills,
+.blox-resume-awards,
+.blox-resume-languages {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Publication illustration thumbnails */
+.pub-thumb {
+  height: clamp(110px, 28vw, 220px);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .pub-thumb {
+    height: 260px;
+  }
+}
+
+/* News block inside  the dark biography hero */
+.news-in-hero a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.news-in-hero a:hover {
+  text-decoration-color: #fff;
 }

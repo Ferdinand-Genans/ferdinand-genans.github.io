@@ -1,0 +1,19 @@
+# News items shown on the homepage.
+# The 3 most recent entries (by `date`) are displayed automatically.
+# Each item:
+#   date:  YYYY-MM-DD (required, used for sorting)
+#   title: short text (required)
+#   url:   optional link
+items:
+  - date: 2026-05-01
+    title: "New preprint **Fast and Large-Scale Unbalanced Optimal Transport** available."
+    url: "https://arxiv.org/pdf/2602.10697"
+  - date: 2026-05-01
+    title: "Paper **Fast and Large-Scale Unbalanced Optimal Transport** accepted at COLT 2026."
+    url: "https://arxiv.org/pdf/2602.10697"
+  - date: 2025-09-25
+    title: "Two papers accepted at NeurIPS 2025 — one **Spotlight** — on Semi-Discrete Optimal Transport."
+    url: "/research/"
+  - date: 2025-09-01
+    title: "Started as a **Student Researcher at Google Research** (Sep 2025 — Mar 2026)."
+    url: ""

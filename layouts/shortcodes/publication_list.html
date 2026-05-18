@@ -1,0 +1,50 @@
+{{/*
+  publication_list shortcode — renders a list of publications as cards
+  from data/publications.yaml.
+  Usage:
+    {{< publication_list category="publications" >}}
+    {{< publication_list category="preprints" >}}
+*/}}
+{{ $category := .Get "category" }}
+{{ $items := index site.Data.publications $category }}
+
+<div class="space-y-6">
+  {{ range $items }}
+    {{ $pub := . }}
+    <article class="p-5 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition">
+      <h3 class="text-lg md:text-xl font-semibold mb-1 leading-snug">{{ $pub.title }}</h3>
+      {{ with $pub.authors }}
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-2">{{ . }}</p>
+      {{ end }}
+      <p class="text-sm text-gray-600 dark:text-gray-400 mb-3 italic">
+        {{ with $pub.venue }}{{ . }}{{ end }}{{ if and $pub.venue $pub.year }} · {{ end }}{{ with $pub.year }}{{ . }}{{ end }}
+      </p>
+      {{ with $pub.abstract }}
+        <p class="text-sm md:text-base text-gray-800 dark:text-gray-200 mb-3 leading-relaxed">{{ . }}</p>
+      {{ end }}
+      {{ with $pub.image }}
+        <div class="mb-3 flex justify-center">
+          <a href="{{ . }}" target="_blank" rel="noopener" class="block">
+            <img src="{{ . }}" alt="Figure for {{ $pub.title }}"
+                 class="pub-thumb block rounded border border-gray-100 dark:border-gray-800 bg-white"
+                 loading="lazy" />
+          </a>
+        </div>
+      {{ end }}
+      <div class="flex flex-wrap gap-2">
+        {{ with $pub.paper }}
+          <a href="{{ . }}" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white transition">
+            📄 Paper
+          </a>
+        {{ end }}
+        {{ with $pub.code }}
+          <a href="{{ . }}" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition">
+            💻 Code
+          </a>
+        {{ end }}
+      </div>
+    </article>
+  {{ end }}
+</div>

@@ -1,0 +1,28 @@
+{{/*
+  latest_news shortcode — renders the most recent news items from data/news.yaml.
+  Usage: {{< latest_news limit="3" >}}
+*/}}
+{{ $limit := default 3 (.Get "limit") }}
+{{ $limit = int $limit }}
+{{ $items := slice }}
+{{ with site.Data.news }}
+  {{ $items = sort .items "date" "desc" }}
+{{ end }}
+{{ $items = first $limit $items }}
+
+<ul class="space-y-3 list-none pl-0">
+  {{ range $items }}
+    <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+      <span class="text-sm font-mono text-gray-500 dark:text-gray-400 whitespace-nowrap">
+        {{ dateFormat "Jan 2, 2006" .date }}
+      </span>
+      <span class="flex-1">
+        {{ if .url }}
+          <a href="{{ .url }}" class="hover:underline">{{ .title | markdownify }}</a>
+        {{ else }}
+          {{ .title | markdownify }}
+        {{ end }}
+      </span>
+    </li>
+  {{ end }}
+</ul>
