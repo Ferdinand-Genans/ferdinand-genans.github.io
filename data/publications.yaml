@@ -14,6 +14,20 @@
 # Missing fields are handled gracefully — only the buttons/sections with data appear.
 
 publications:
+  - title: "Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation"
+    authors: "F. Genans, O. Wintenberger"
+    abstract: >
+      We introduce a fast estimator for the one-sample Wasserstein discretization error
+      that avoids the need for an OT solver. Building on this, we propose a
+      resolution-dependent intrinsic dimension estimator for probability measures.
+      Finally, we derive a new OT Richardson extrapolation estimator for the OT distance
+      utilizing this intrinsic dimension.
+    venue: "NeurIPS 2026"
+    year: 2026
+    paper: "https://arxiv.org/pdf/2602.04335"
+    code: ""
+    image: "/research/papers-illustrations/intrinsic-dim-illustration.png"
+
   - title: "Fast and Large-Scale Unbalanced Optimal Transport via its Semi-Dual and Adaptive Gradient Methods"
     authors: "F. Genans"
     abstract: >
@@ -62,22 +76,8 @@ preprints:
       A Richardson-extrapolation-based SGD scheme for learning with missing data, which
       paradoxically increases missingness during training to reduce the bias of the
       final estimator.
-    venue: "Preprint — under review at NeurIPS 2026"
+    venue: "Preprint — under review."
     year: 2026
     paper: "/research/RichardsonMissingVals_Preprint.pdf"
     code: ""
     image: "/research/papers-illustrations/missingvals-illustration.png"
-    
-  - title: "Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation"
-    authors: "F. Genans, O. Wintenberger"
-    abstract: >
-      We introduce a fast estimator for the one-sample Wasserstein discretization error
-      that avoids the need for an OT solver. Building on this, we propose a
-      resolution-dependent intrinsic dimension estimator for probability measures.
-      Finally, we derive a new OT Richardson extrapolation estimator for the OT distance
-      utilizing this intrinsic dimension.
-    venue: "Preprint — under review at NeurIPS 2026"
-    year: 2026
-    paper: "https://arxiv.org/pdf/2602.04335"
-    code: ""
-    image: "/research/papers-illustrations/intrinsic-dim-illustration.png"

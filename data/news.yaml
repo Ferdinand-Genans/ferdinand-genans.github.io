@@ -5,6 +5,9 @@
 #   title: short text (required)
 #   url:   optional link
 items:
+  - date: 2026-09-29
+    title: "Paper **Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation** accepted at **NeurIPS 2026**."
+    url: "/research/"
   - date: 2026-05-15
     title: "New preprint **Increasing Missingness to Reduce Bias: Richardson-SGD with Missing Data** available."
     url: "https://ferdinand-genans.github.io/research/RichardsonMissingVals_Preprint.pdf"
